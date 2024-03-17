@@ -34,6 +34,11 @@ public class InfixToPostFix {
             
             st.push(c);}
         }
+        while(!st.isEmpty()){
+postfix+=st.peek();
+            st.pop();
+        }
+        
         System.out.println("postfix="+postfix);
     }
 }
